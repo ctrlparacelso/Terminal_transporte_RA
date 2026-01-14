@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal de Transportes de Florida</title>
+
+    <!-- RUTA CSS  -->
+    <link rel="stylesheet" href="css/Style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">🚍 Terminal de Florida</div>
+      <nav>
+        <a href="#buscador">Rutas</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#compra">Compra</a>
+        <a href="#contacto">Contacto</a>
+        <a href="blog/blog.html">Blog</a>
+      </nav>
+    </header>
+
+    <!-- BUSCADOR -->
+    <section id="buscador" class="card">
+      <h2>🔎 Buscador de Rutas</h2>
+      <form id="form-buscar">
+        <div class="form-group">
+          <label>Origen:</label>
+          <select id="origen">
+            <option value="Cali">Cali</option>
+            <option value="Florida">Florida</option>
+            <option value="Palmira">Palmira</option>
+            <option value="Miranda">Miranda</option>
+            <option value="Pradera">Pradera</option>
+            <option value="Santander de quilichao">
+              Santander de quilichao
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Destino:</label>
+          <select id="destino">
+            <option value="Florida">Florida</option>
+            <option value="Cali">Cali</option>
+            <option value="Palmira">Palmira</option>
+            <option value="Miranda">Miranda</option>
+            <option value="Pradera">Pradera</option>
+            <option value="Santander de quilichao">
+              Santander de quilichao
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Pasajeros:</label>
+          <input type="number" id="pasajeros" value="1" min="1" />
+        </div>
+
+        <button type="submit" class="btn-primary">Buscar Ruta</button>
+      </form>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section id="resultados" class="card">
+      <h2>📋 Resultados de Búsqueda</h2>
+      <ul id="lista-resultados"></ul>
+    </section>
+
+    <!-- COMPRA -->
+    <section id="compra" class="card">
+      <h2>💳 Compra de Tiquetes</h2>
+      <form id="form-compra">
+        <div class="form-group">
+          <label>Nombre:</label>
+          <input type="text" id="nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label>Correo:</label>
+          <input type="email" id="correo" required />
+        </div>
+
+        <div class="form-group">
+          <label>Vehículo:</label>
+          <select id="vehiculo">
+            <option>Bus</option>
+            <option>Buseta</option>
+          </select>
+        </div>
+
+        <button type="button" id="simular" class="btn-primary">
+          Simular Compra
+        </button>
+      </form>
+    </section>
+
+    <!-- RESUMEN -->
+    <section id="resumen" class="card">
+      <h2>🧾 Resumen</h2>
+      <div id="resumen-detalles"></div>
+      <button id="pagar" class="btn-secondary">Pagar</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+      <p>📞 315 123 4567 | 📞 314 715 1972</p>
+      <p>📧 info@terminaldeflorida.com</p>
+      <p>© 2025 Terminal de Transportes de Florida</p>
+
+      <!-- REDES SOCIALES -->
+      <div class="redes-sociales">
+        <h3>Síguenos en nuestras redes</h3>
+
+        <div class="iconos-redes">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="imagenes/facebook.svg" alt="Facebook" />
+            <span>Facebook</span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" target="_blank">
+            <img
+              src="imagenes/instagram.svg"
+              alt="Instagram"
+              width="60"
+              height="60"
+              style="object-file: contain"
+            />
+            <span>instagram</span>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/573001234567" target="_blank">
+            <img
+              src="imagenes/whatsapp.svg"
+              alt="WhatsApp"
+              width="60"
+              height="60"
+              style="object-fit: contain"
+            />
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS  -->
+    <script src="js/Script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+services:
+  mysql:
+    image: mysql:8.1
+    container_name: mysql_terminal
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MiContraseñaSegura
+      MYSQL_DATABASE: terminaldb
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - terminal-net
+
+  apache-php:
+    image: php:8.2-apache
+    container_name: php_apache_terminal
+    restart: always
+    volumes:
+      - ./html:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    networks:
+      - terminal-net
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_terminal
+    restart: always
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: MiContraseñaSegura
+    ports:
+      - "8081:80"
+    depends_on:
+      - mysql
+    networks:
+      - terminal-net
+
+networks:
+  terminal-net:
+
+volumes:
+  mysql_data:
+

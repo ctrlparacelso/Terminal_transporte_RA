@@ -1,0 +1,57 @@
+/* Fondo suave */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  background: #06c;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Contenedor de posts */
+.post {
+  background: white;
+  width: 90%;
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+}
+
+/* Título de cada noticia */
+.post h2 {
+  color: #06c;
+  margin-bottom: 10px;
+}
+
+/* Párrafos */
+.post p {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Botón */
+.post a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #06c;
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Animación al pasar el mouse */
+.post a:hover {
+  background: #004c99;
+}

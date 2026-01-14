@@ -1,0 +1,169 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CARD STYLE */
+.card {
+  background-color: white;
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
+}
+
+/* TITLES */
+h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #1e7e34;
+}
+
+/* RESULTADOS LIST */
+#lista-resultados {
+  list-style: none;
+  padding-left: 0;
+}
+
+#lista-resultados li {
+  background-color: #eaf4ff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Redes sociales */
+.redes-sociales {
+  padding: 20px;
+  background: #f7f7f7;
+  margin-top: 25px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* Color titulo */
+.redes-sociales h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding-top: 10px;
+}
+
+.iconos-redes a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.iconos-redes img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 5px;
+  transition: transform 0.2s;
+}
+
+.iconos-redes img:hover {
+  transform: scale(1.15);
+}
